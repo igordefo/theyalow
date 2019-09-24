@@ -4,7 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>TheYalow</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <button class="header__button" type="button"></button>
+      <button class="header__button" type="button"></button>
+      <div class="container">
+        <div class="row justify-content-between align-items-end">
+          <div class="logo-box">
+            <svg class="logo" width="83" height="83">
+              <use xlink:href="assets/img/sprite.svg#logo"></use>
+            </svg>
+            <h1 class="title">TheYalow</h1>
+          </div>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <svg class="navigation__icon" width="21" height="19">
+                    <use xlink:href="assets/img/sprite.svg#nav-icon-1"></use>
+                  </svg>
+                  About Us
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--serv">
+                  <svg class="navigation__icon" width="19" height="19">
+                    <use xlink:href="assets/img/sprite.svg#nav-icon-2"></use>
+                  </svg>
+                  Services
+                </a>
+              </li>
+              <li class="navigation__item navigation__link--cont">
+                <a href="#" class="navigation__link">
+                  <svg class="navigation__icon" width="24" height="18">
+                    <use xlink:href="assets/img/sprite.svg#nav-icon-3"></use>
+                  </svg>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__intro">
+          <div class="header__media">
+            <video
+              class="header__video"
+              id="video"
+              controls
+              poster="assets/img/player-img.png"
+            >
+              <source src="#" type="video/mp4" />
+            </video>
+            <div id="video-controls">
+              <button type="button" class="play-pause">Play</button>
+              <div class="video-bottom-controls">
+                <button type="button" class="play-pause-2">Play</button>
+                <input type="range" class="seek-bar" value="0" />
+                <button type="button" class="mute">Mute</button>
+              </div>
+            </div>
+          </div>
+          <h2 class="header__subtitle">
+            <span>The cool</span>
+            The minimal
+          </h2>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
