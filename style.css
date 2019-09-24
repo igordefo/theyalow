@@ -1,0 +1,29 @@
+:root {
+  --main: #f5c506;
+}
+
+html {
+  font-size: 62.5%; /* default font-size 10px for all page */
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
