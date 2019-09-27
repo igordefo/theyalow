@@ -518,3 +518,26 @@ video {
   vertical-align: top;
   font-weight: 400;
 }
+
+/* Footer */
+
+.footer {
+  padding: 0.7rem 0;
+  background-color: #4c4c4c;
+  box-shadow: 0 -0.3rem 0.5rem rgba(0, 0, 0, 0.75);
+}
+
+.logo--footer {
+  width: 5.2rem;
+  height: 5.2rem;
+}
+
+.title--footer {
+  margin-left: 1rem;
+  text-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.42);
+  color: #ffffff;
+  font-family: 'Lucida Sans';
+  font-size: 2.9rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
