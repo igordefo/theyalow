@@ -452,3 +452,69 @@ video {
   transform: scale(1.05);
   background-color: #d38d00;
 }
+
+/* Advantages section */
+
+.advantages {
+  padding-top: 4.2rem;
+  padding-bottom: 8rem;
+  background-image: url(../img/bg-grey.png);
+}
+
+.advantages__title {
+  margin-bottom: 3rem;
+  color: #f5c506;
+  font-family: 'PT Sans';
+  font-size: 4.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.043rem;
+}
+
+.advantages__images {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  min-width: 54rem;
+}
+
+.advantages__images > *:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.advantages__images img:nth-child(3) {
+  position: relative;
+  top: 5.5rem;
+}
+
+.advantages__list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-left: 13rem;
+}
+
+.advantages__item {
+  color: var(--main);
+  font-size: 4rem;
+  list-style: disc;
+  line-height: 3rem;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.advantages__text {
+  display: inline-block;
+  color: #a9a9a7;
+  font-family: 'Open Sans';
+  font-size: 2.2rem;
+  vertical-align: top;
+  font-weight: 400;
+}
