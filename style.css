@@ -291,6 +291,8 @@ video {
   background-image: url(../assets/img/mute.svg);
 }
 
+/* Feature */
+
 .feature {
   background: url(../assets/img/feature-bg.png);
   box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
@@ -321,4 +323,132 @@ video {
   font-size: 2.7rem;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+/* Slider */
+
+.slider {
+  padding: 3rem 0 2.3rem 0;
+  background: url(../assets/img/yellow-bg.png);
+}
+
+.slider__item {
+  position: relative;
+}
+
+.slider__item:nth-of-type(1) {
+  padding: 1.5rem 3.8rem 3.4rem 3.1rem;
+  width: 33.333%;
+  height: 23.2rem;
+  background-color: #ec9e03;
+}
+
+.slider__text {
+  color: #ffffff;
+  font-family: 'Segoe WP';
+  font-size: 2.9rem;
+  font-weight: 300;
+  line-height: 3.8rem;
+  letter-spacing: 0.029rem;
+}
+
+.slider__item:nth-of-type(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 32.25%;
+  background-color: #ec9e03;
+}
+
+.slider__item:nth-of-type(3) .slider__icon {
+  margin-top: 1rem;
+}
+
+.slider__title {
+  margin-bottom: 4rem;
+  color: #ffffff;
+  font-family: 'PT Sans';
+  font-size: 3.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.037rem;
+}
+
+.slider__number {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: #ffffff;
+  font-family: 'Segoe WP', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 3.8rem;
+  letter-spacing: 0.025rem;
+}
+
+.slider__button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.slider__button:hover {
+  transform: rotate(135deg);
+}
+
+.slider__date {
+  display: inline-block;
+  margin-bottom: 4rem;
+  padding: 0.4rem 2.3rem 0.9rem 3.1rem;
+  background-color: #ddb101;
+}
+
+.slider__date span:first-child {
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 5.1rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.051rem;
+}
+
+.slider__date span:last-child {
+  display: block;
+  color: #b26529;
+  font-family: 'Segoe UI';
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.021rem;
+}
+
+.slider__thumb {
+  position: relative;
+  margin-left: 7.25%;
+  margin-right: 4.8%;
+  height: 1.5rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.48);
+}
+
+.slider__thumb::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 28%;
+  width: 21%;
+  height: 1.5rem;
+  background-color: #ec9e03;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.slider__thumb:hover::after {
+  transform: scale(1.05);
+  background-color: #d38d00;
 }
