@@ -59,7 +59,7 @@ video {
 
 .header {
   position: relative;
-  background: url(../assets/img/bg-hero.png) no-repeat;
+  background: url(assets/img/bg-hero.png) no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 3rem;
@@ -75,7 +75,7 @@ video {
   height: 5.7rem;
   border: none;
   background-color: var(--main);
-  background-image: url(../assets/img/left-arrow.svg);
+  background-image: url(assets/img/left-arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.6;
@@ -89,7 +89,7 @@ video {
 
 .header__button:last-of-type {
   right: 0;
-  background-image: url(../assets/img/right-arrow.svg);
+  background-image: url(assets/img/right-arrow.svg);
 }
 
 .logo-box {
@@ -215,7 +215,7 @@ video {
   width: 67px;
   height: 67px;
   font-size: 0;
-  background: url(../assets/img/play.svg) no-repeat center, #f5c506;
+  background: url(assets/img/play.svg) no-repeat center, #f5c506;
   background-position-x: 55%;
   border: none;
   border-radius: 50%;
@@ -229,7 +229,7 @@ video {
   height: 27px;
   font-size: 0;
   border: none;
-  background: url(../assets/img/play.svg) no-repeat center, #f5c506;
+  background: url(assets/img/play.svg) no-repeat center, #f5c506;
   background-size: 30%;
   cursor: pointer;
   opacity: 0.37;
@@ -288,13 +288,13 @@ video {
   font-size: 0;
   border: 0;
   background-color: transparent;
-  background-image: url(../assets/img/mute.svg);
+  background-image: url(assets/img/mute.svg);
 }
 
 /* Feature */
 
 .feature {
-  background: url(../assets/img/feature-bg.png);
+  background: url(assets/img/feature-bg.png);
   box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -329,7 +329,7 @@ video {
 
 .slider {
   padding: 3rem 0 2.3rem 0;
-  background: url(../assets/img/yellow-bg.png);
+  background: url(assets/img/yellow-bg.png);
 }
 
 .slider__item {
@@ -458,7 +458,7 @@ video {
 .advantages {
   padding-top: 4.2rem;
   padding-bottom: 8rem;
-  background-image: url(../img/bg-grey.png);
+  background-image: url(assets/img/bg-grey.png);
 }
 
 .advantages__title {
