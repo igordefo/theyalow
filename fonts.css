@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Lucida Sans';
   font-display: swap;
-  src: url(assets/fonts/lucida-sans.woff);
+  src: url('assets/fonts/lucida-sans.woff');
 }
 
 @font-face {
@@ -62,8 +62,7 @@
 
 @font-face {
   font-family: 'Segoe WP';
-  src: url('') format('woff2'),
-    url('assets/fonts/SegoeWP-Light.ttf') format('truetype');
+  src: url('assets/fonts/SegoeWP-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -86,11 +85,15 @@
 
 @font-face {
   font-family: 'Lucida Sans';
-  src: url('assets/fonts/LucidaSans.eot');
-  src: url('assets/fonts/LucidaSans.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/LucidaSans.woff2') format('woff2'),
-    url('assets/fonts/LucidaSans.woff') format('woff'),
-    url('../fonts/LucidaSans.ttf') format('truetype');
+  src: url('assets/fonts/LucidaSans.woff2') format('woff2');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow Bold';
+  src: url('assets/fonts/PTSans-NarrowBold.woff2') format('woff2'),
+    url('assets/fonts/PTSans-NarrowBold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
