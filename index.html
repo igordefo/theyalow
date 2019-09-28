@@ -17,9 +17,7 @@
       <div class="container">
         <div class="row justify-content-between align-items-end">
           <div class="logo-box">
-            <svg class="logo" width="83" height="83">
-              <use xlink:href="assets/img/sprite.svg#logo"></use>
-            </svg>
+            <img src="assets/img/logo.svg" alt="" class="logo">
             <h1 class="title">TheYalow</h1>
           </div>
           <nav class="navigation">
@@ -70,7 +68,7 @@
               </div>
             </div>
           </div>
-          <h2 class="header__subtitle">
+          <h2 class="header__subtitle visually-hidden">
             <span>The cool</span>
             The minimal
           </h2>
@@ -81,18 +79,18 @@
       <div class="container">
         <div class="row">
           <div class="feature__item">
-            <svg class="feature__icon" width="109" height="74">
+            <svg class="feature__icon feature__icon--1" width="109" height="74">
               <use xlink:href="assets/img/sprite.svg#feat-1"></use>
               <p class="feature__name">better design</p>
             </svg>
           </div>
           <div class="feature__item">
-            <svg class="feature__icon" width="92" height="95">
+            <svg class="feature__icon feature__icon--2" width="92" height="95">
               <use xlink:href="assets/img/sprite.svg#feat-2"></use>
               <p class="feature__name">customise</p>
             </svg>
           </div>
-          <div class="feature__item">
+          <div class="feature__item feature__icon--2">
             <svg class="feature__icon" width="81" height="83">
               <use xlink:href="assets/img/sprite.svg#feat-3"></use>
               <p class="feature__name">Its Free</p>
@@ -103,7 +101,7 @@
     </section>
     <section class="slider">
       <div class="container">
-        <h2 class="slider__title">Lorem ipsum dolor sit amet</h2>
+        <h2 class="slider__title visually-hidden">Lorem ipsum dolor sit amet</h2>
         <div class="row">
           <div class="slider__item">
             <p class="slider__text">
@@ -118,12 +116,30 @@
             <video poster="assets/img/scroll-video.png">
               <source src="#" type="video/mp4" />
             </video>
+            <button type="button" class="play-pause">Play</button>
           </div>
           <div class="slider__item">
-            <span class="slider__number">22</span>
+            <span class="slider__number visually-hidden">22</span>
             <svg class="slider__icon" width="163" height="133">
               <use xlink:href="assets/img/sprite.svg#twitter"></use>
             </svg>
+            <div class="slider__wrapper">
+              <ul class="slider__messages">
+                <li class="slider__message">
+                  <span>Daily Mobile UI Design Inspiration #1 via @cssauthor</span>
+                </li>
+                <li class="slider__message">
+                  <span>Daily Mobile UI Design Inspiration #1 via @cssauthor</span>
+                </li>
+                <li class="slider__message">
+                  <span>Daily Mobile UI Design Inspiration #1 via @cssauthor</span>
+                </li>
+                <li class="slider__input">
+                  <input type="text">
+                  <button type="submit">Tweet </button>
+                </li>
+              </ul>
+            </div>
             <a class="slider__button" href="#">
               <img src="assets/img/plus.svg" alt="Add" />
             </a>
@@ -145,7 +161,7 @@
             <img src="assets/img/tablet.png" alt="Tablet" />
             <img src="assets/img/phone.png" alt="Phone" />
           </div>
-          <ul class="advantages__list">
+          <ul class="advantages__list visually-hidden">
             <li class="advantages__item">
               <p class="advantages__text">Sed ut perspiciatis unde omnis</p>
             </li>
@@ -168,7 +184,7 @@
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="logo-box">
+        <div class="logo-box logo-box--footer">
           <img class="logo--footer" src="assets/img/logo.svg" alt="Logo" />
           <h1 class="title title--footer">TheYalow</h1>
         </div>
@@ -177,6 +193,17 @@
     <script>
       const video = document.getElementById('video');
       video.controls = false;
+
+      const poster = (evt) => {
+        if (x.matches) {
+          document.getElementById("video").poster = "assets/img/poster-mob.png";
+        } else {
+          document.getElementById("video").poster = "assets/img/player-img.png";
+        }
+      }
+      let x = window.matchMedia("(max-width: 1020px)");
+      poster();
+      x.addListener(poster);
     </script>
   </body>
 </html>
